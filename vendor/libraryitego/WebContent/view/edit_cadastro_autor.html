@@ -1,0 +1,17 @@
+{include="cadastro_autor"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_autor = "{$nome_autor}";
+			var idautor = "{$idautor}";
+		
+			$("#nome_autor").val(nome_autor);
+			
+			$("#formlivroautor").append('<input type="hidden" name="idautor" id="idautor">');
+			$("#idautor").val(idautor);
+		
+	});
+
+</script>

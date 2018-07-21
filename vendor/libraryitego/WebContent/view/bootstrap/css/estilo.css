@@ -1,0 +1,70 @@
+.tamanho{
+	width: 45%;
+	margin-right: 27.5%;
+	margin-left: 27.5%;
+	height: auto;
+	
+}
+.topo{
+	background-image: linear-gradient(to right, #4169E1, #6495ED);
+	
+}
+nav{
+	margin-bottom: 10px;
+}
+.espaco-topo{
+	padding-top: 5%;
+
+
+}
+.espaco-bottom{
+	padding-bottom: 8%;
+}
+.letra{
+	color: white;
+}
+.links-menus{
+	text-decoration: none;
+	color: rgb(233,233,233);
+	font-size: 17px;
+	margin-bottom: -15px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.links-menus:hover{
+	color: white;
+	text-decoration: none;
+}
+.sub-links:hover{
+
+	background-image: linear-gradient(to right, #4169E1, #6495ED);
+	font-weight: bold;
+}
+/*.dropdown-menu{
+	margin-top: 15px;
+}*/
+.style-menu:hover{
+	background-color: #0000b3;
+	border-radius: 5px;
+
+}
+.style-menu{
+	margin-bottom: -10%;
+}
+.img{
+	
+	height: auto;
+	width: auto;
+	margin-top: 0.5%;
+}
+.imagem{
+	height: 500px;
+
+}
+.caixa-tipo{
+	margin-left: 1.5%;
+	width: 15%;
+}

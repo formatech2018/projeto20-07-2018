@@ -1,0 +1,17 @@
+{include="cadastro_turno"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_turno = "{$nome_turno}";
+			var idturno = "{$idturno}";
+		
+			$("#nome_turno").val(nome_turno);
+			
+			$("#formturmaturno").append('<input type="hidden" name="idturno" id="idturno">');
+			$("#idturno").val(idturno);
+		
+	});
+
+</script>

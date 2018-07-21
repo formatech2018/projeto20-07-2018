@@ -1,0 +1,21 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Alunos por Turma</h1>
+</div>
+<table>
+	<tr>
+		<th class="align-center">Turma</th>
+		<th>Quantidade de Alunos por Turma</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td class="align-center">{$value.idturma}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+	{loop="$result2"}
+	<tr>
+		<td class="align-center">{$value.idturma}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+</table>

@@ -1,0 +1,19 @@
+<div class="container">
+	<h1 class="titulo-formulario">Excluir Formação</h1>
+    <form id="formfuncionarioformacao" action="/crud/funcionario/formacao/delete" method="POST">
+        <div class="form-row">
+            <div class="col col1">
+              <label for="formGroupExampleInput">Formação</label>
+              <input type="text"  name="nome_formacao" id="nome_formacao" value="{$nome_formacao}" class="form-control" readonly="">
+              <input type="hidden"  name="idformacao" id="idformacao" value="{$idformacao}" class="form-control" readonly="">
+            </div>
+       </div>
+
+       <div class="form-row">
+          <div class="col">
+            <button type="submit" class="btn btn-danger botao botaoexcluir">Excluir</button>
+          </div>
+       </div>
+   
+    </form>
+</div>

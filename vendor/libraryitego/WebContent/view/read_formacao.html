@@ -1,0 +1,26 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Listar Formações</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">FORMAÇÃO</th>
+        <th scope="col">AÇÃO</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultformacao"}
+      <tr>
+      
+        <td scope="row">{$value.nome_formacao}</td> 
+         <td><a href="/crud/funcionario/formacao/{$value.idformacao}/update" class="btn btn-warning botao">Editar</a>
+          <a href="/crud/funcionario/formacao/{$value.idformacao}/delete" class="btn btn-danger botao">Excluir</a>
+         </td>
+ 
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

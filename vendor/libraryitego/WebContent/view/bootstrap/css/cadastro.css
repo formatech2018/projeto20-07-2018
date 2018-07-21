@@ -1,0 +1,32 @@
+form{
+	margin-top: 0.5%;
+
+}
+.titulo1{
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+}
+.select-cadastro{
+  margin-left: 2.5%;
+}
+#alerta{
+	width: 48%;
+	margin-top: 0.5%;
+	margin-left: 1.5%;
+}
+#progresso{
+  background: transparent;
+  transition: border 0.2s;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+}
+#progresso #nivel_senha{
+  background: transparent;
+  transition: background 0.1s;
+  border-radius: 5px;
+
+}
+

@@ -1,0 +1,26 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Livros por Ano de Publicação</h1>
+</div>
+<table>
+	<tr>
+		<th>Ano</th>
+		<th>Quantidade de Livros pelo Ano de Publicação</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td class="align-center">{$value.ano_livro}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+</table>
+
+<table>
+	<tr>
+		<th>Ano de Publicação Com Mais Livros</th>
+		<th>Quantidade</th>
+	</tr>
+	<tr>
+		<td class="align-center">{$ano_livro}</td>
+		<td class="align-center">{$quantidade}</td>
+	</tr>
+</table>

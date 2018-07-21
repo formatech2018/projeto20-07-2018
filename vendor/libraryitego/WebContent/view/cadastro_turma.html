@@ -1,0 +1,31 @@
+<div class="container">
+<h1 class="titulo-formulario">{$title} Turmas</h1>
+<form id="formturma" action="/crud/curso/turma/{$action}" method="POST">
+
+	<div class="form-row">
+		<input type="hidden" name="idcurso" id="idcurso" value="{$idcurso}">
+		 <label for="formGroupExampleInput">Nome do Curso</label>
+		<input type="text" class="form-control" id="nome_curso" value="{$nome_curso}" readonly>
+	</div>
+	<div class="form-row">
+	    <div class="col col1">
+	      <label for="formGroupExampleInput">Data de Inicio</label>
+	      <input type="date" id="data_inicio" name="data_inicio" class="form-control" placeholder="Digite a data de início do curso" required>
+	    </div>
+	    <div class="col col1">
+	      <label for="formGroupExampleInput">Previsão de Término</label>
+	      <input type="date" id="data_termino" name="data_termino" class="form-control" placeholder="Digite a data de previsão de término do curso" required>
+	    </div>
+	</div>
+	 <div class="form-row">
+      <label>Turno</label>
+          <select type="text" id="idturno" name="idturno" class="form-control" required>
+            <option value="">Escolha o Turno</option>
+            {loop="$turno"}
+              <option value="{$value.idturno}">{$value.nome_turno}</option>
+            {/loop}
+          </select>
+  </div> 
+		<button class="btn btn-primary botao">Cadastrar</button>
+</form>
+</div>

@@ -1,0 +1,37 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Livros por Patrimônios</h1>
+</div>
+<table>
+	<tr>
+		<th>Nome do livro</th>
+		<th>Quantidade de Patrimônios do livro</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_livro}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+	{loop="$result2"}
+	<tr>
+		<td>{$value.nome_livro}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+</table>
+
+<table>
+	<tr>
+		<td class="strong">Total de Patrimônios</td> 
+		<td class="align-center">{$total}</td>
+	</tr>
+	<tr>
+		<td class="strong">Total de Patrimônios Ativos</td> 
+		<td class="align-center">{$ativo}</td>
+	</tr>
+	<tr>
+		<td class="strong">Total de Patrimônios Inativos</td> 
+		<td class="align-center">{$inativo}</td>
+	</tr>
+
+</table>

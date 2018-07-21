@@ -1,0 +1,23 @@
+<div class="container">
+<h1 class="titulo-formulario">{$title} Patrimônios</h1>
+<form id="formlivropatrimonio" action="/crud/livro/patrimonio/{$action}" method="POST">
+
+	<div class="form-row">
+		<input type="hidden" name="idlivro" id="idlivro" value="{$idlivro}">
+		 <label for="formGroupExampleInput">Nome do Livro</label>
+		<input type="text" class="form-control" id="nome_livro" value="{$nome_livro}" readonly>
+		 <label for="formGroupExampleInput">ISBN</label>
+		<input type="text" class="form-control" id="isbn" value="{$isbn}" readonly>
+	</div>
+	<div class="form-row">
+	    <div class="col col1">
+	      <label for="formGroupExampleInput">Patrimônio</label>
+	      <input type="number" id="idpatrimonio" name="idpatrimonio" class="form-control" placeholder="Digite o patrimônio do livro" required>
+	    </div>
+	    
+	</div>
+	 
+		<button class="btn btn-primary botao">Cadastrar</button>
+		<a class="btn btn-success botao" href="/crud/livro/search">Pesquisar outro livro</a>
+	</form>
+	</div>

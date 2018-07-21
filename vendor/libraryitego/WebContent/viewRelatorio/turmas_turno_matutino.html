@@ -1,0 +1,17 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Turmas Ativas do Turno Matutino</h1>
+</div>
+<table>
+	<tr>
+		<th>Turma</th>
+		<th>Data de Início</th>
+		<th>Data Término</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td class="align-center">{$value.idturma}</td>
+		<td class="align-center">{$value.data_inicio}</td>
+		<td class="align-center">{$value.data_termino}</td>
+	</tr>
+	{/loop}
+</table>

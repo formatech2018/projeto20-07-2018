@@ -1,0 +1,42 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Listar Livros</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ISBN</th>
+        <th scope="col">NOME</th>
+        <th scope="col">ANO</th>
+        <th scope="col">ASSUNTO</th>
+        <th scope="col">EDIÇÃO</th>
+        <th scope="col">EDITORA</th>
+        <th scope="col">ÁREA</th>
+        <th scope="col">LISTAS</th>
+        <th scope="col">AÇÃO</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultlivro"}
+      <tr>
+      
+        <th scope="row">{$value.isbn}</th> 
+        <td>{$value.nome_livro}</td>
+        <td>{$value.ano_livro}</td>
+        <td>{$value.assunto}</td>
+        <td>{$value.edicao}</td>
+        <td>{$value.nome_editora}</td>
+        <td>{$value.nome_area}</td>
+        <td><a href="/crud/livro/{$value.idlivro}/autores/0/10/read" class="btn btn-primary botao tamanhob"> Autores</a>
+        <a href="/crud/livro/{$value.idlivro}/patrimonio/0/10/read" class="btn btn-primary botao tamanhob">Patrimônios</a></td>
+        <td><a href="/crud/livro/{$value.idlivro}/update" class="btn btn-warning botao tamanhob">Editar</a>
+        <a href="/crud/livro/{$value.idlivro}/delete" class="btn btn-danger botao tamanhob">Excluir</a></td>
+        
+        
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

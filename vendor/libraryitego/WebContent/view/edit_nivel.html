@@ -1,0 +1,24 @@
+<div class="container">
+	<form action="/crud/cargo/nivel/{$idcargo}/update" method="POST">
+		<div class="col">
+			<label>CARGO</label>
+			<input type="text" name="nome_cargo" value="{$nome_cargo}" disabled="" class="form-control col">
+		</div>
+
+    	<div class="col">
+      		<label for="formGroupExampleInput">NÍVEL</label>
+      			<select class="form-control col" value="" name="nivel" required>
+       				<option value="">Escolha o Nível</option>
+      				 <option value="0" name="aluno">0 - Usuário Comum</option>
+       				 <option value="1" name="funcionario">1 - Administrador (Bibiotecário)</option>
+       				  <option value="2" name="funcionario">2 - Administrador</option>
+     		 </select>
+    	</div>
+
+    	<div class="col">
+    		<button class="btn btn-primary botao">Editar</button>
+    	</div>
+		
+	</form>
+	
+</div>

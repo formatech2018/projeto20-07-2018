@@ -1,0 +1,25 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Listar Áreas</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NOME</th>
+        <th>AÇÃO</th>
+        
+       
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultarea"}
+      <tr>
+      
+        <td scope="row">{$value.nome_area}</td> 
+         <td><a href="/crud/livro/area/{$value.idarea}/update" class="btn btn-warning botao">editar</a>
+           <a href="/crud/livro/area/{$value.idarea}/delete" class="btn btn-danger botao">Excluir</a></td>
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

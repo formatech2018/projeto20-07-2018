@@ -1,0 +1,194 @@
+
+.tamanho{
+	width: 40%;
+	height: auto;
+	margin: 4%;
+	margin-top: -30px;
+	
+}
+.titulo{
+	font-size: 16px;
+	font-family: "arial black";
+}
+
+.titulo-nivel{
+	font-size: 25px;
+	font-family: "arial black";
+	text-align: center;
+
+}
+.color-fundo-titulo{
+	background-color: rgb(1,90,218);
+	border-radius: 5px;
+	color: white;
+	margin-bottom: 10px;
+}
+table, td,th{
+	 border-style: solid;
+	 border-width: 3px;
+	 border-collapse: collapse;
+	 border-color: rgb(1,90,218);
+	 width: 100%;
+	 font-size: 30px;
+	 font-family: "arial black";
+	 margin-bottom: 15px;
+	 padding-bottom: 8px;
+	 padding-top: 8px;
+	 border-left-style: none;
+	 border-right-style: none;
+	
+}
+.tabelacurso tr td{
+	font-size: 40px;
+}
+.tabelacurso tr th{
+	font-size: 40px;
+}
+.tabela-funcionario tr td{
+	font-size: 42px;
+}
+.tabela-funcionario tr th{
+	font-size: 42px
+}
+.tabela-livro tr td{
+	font-size: 42px;
+}
+.tabela-livro tr th{
+	font-size: 42px
+}
+.tabela-aluno tr td{
+	font-size: 32px;
+}
+.tabela-aluno tr th{
+	font-size: 32px;
+}
+.tabela-avaliacao tr td{
+	font-size: 80px;
+}
+.tabela-avaliacao tr th{
+	font-size: 80px;
+}
+.align-center{
+	text-align: center;
+}
+.align-left{
+	text-align: left;
+}
+th{
+	background-color: rgb(1,90,218);
+	color: white;
+	border-radius: 5px;
+}
+.strong{
+	font-weight: bold;
+}
+.paragrafo{
+
+	text-indent: 20px;
+	text-align: justify;
+	line-height: 20px;
+}
+.p{
+
+	text-align: justify;
+	line-height: 20px;
+	text-align: justify;
+}
+.p-livros{
+	text-align: justify;
+	line-height: 20px;
+	border-top-style: solid;
+}
+.assinatura{
+	border-top-style: solid;
+	border-top-width: 1.5px;
+	width: 45%;
+	text-align: center;
+	margin-top: 40px;
+}
+.titulo-autorizacao{
+	padding-left: 5px;
+	font-size: 20px;
+}
+.titulo-autorizacao2{
+	padding-left: 5px;
+	font-size: 15px;
+	margin-top: 20px;
+}
+.lado-left{
+	float: left;
+
+}
+.lado-right{
+	float: right;
+	margin-top: 0;
+}
+.tabela-nivel tr th{
+
+	background-color: rgb(1,90,218);
+	color: white;
+	width: 25%;
+	font-size: 20px;
+	font-family: "times new roman";
+
+}
+.tabela-nivel tr td{
+	font-size: 20px;
+	text-align: justify;
+	font-family: "times new roman";
+	padding-left: 10px;
+	line-height: 30px;
+}
+
+.paragrafo-nivel{
+	font-size: 15px;
+	text-align: justify;
+	font-family: "times new roman";
+	line-height: 25px;
+	text-indent: 20px;
+}
+
+#cor-nivel0{
+	border-bottom-color: white;
+}
+#cor-nivel1{
+	border-bottom-color: white;
+}
+
+.codigo{
+	width: 1000%;
+}
+#tabela-autorizacao tr td{
+
+	text-align: center;
+}
+#tabela-autorizacao tr td, th{
+	font-size: 60px;
+}
+
+#tabela-devolucao1 tr td{
+
+	text-align: center;
+}
+#tabela-devolucao1 tr td, th{
+	font-size: 61px;
+}
+#tabela-devolucao1 tr th{
+	font-size: 61px;
+}
+
+#tabela-devolucao2 tr td{
+
+	text-align: center;
+}
+#tabela-devolucao2 tr td, th{
+	font-size: 47px;
+}
+#tabela-devolucao2 tr th{
+	font-size: 47px;
+}
+
+
+
+
+

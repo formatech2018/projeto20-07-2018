@@ -1,0 +1,34 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Avaliação por Livro</h1>
+</div>
+<table class="tabela-avaliacao">
+	<tr>
+		<th>Nome do livro</th>
+		<th>Excelente</th>
+		<th>Ótimo</th>
+		<th>Regular</th>
+		<th>Ruim</th>
+		<th>Péssimo</th>
+		<th>Média</th>
+		
+		
+	</tr>
+	
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_livro}</td>
+		<td class="align-center">{$value.quantidade_excelente}</td>
+		<td class="align-center">{$value.quantidade_otimo}</td>
+		<td class="align-center">{$value.quantidade_regular}</td>
+		<td class="align-center">{$value.quantidade_ruim}</td>
+		<td class="align-center">{$value.quantidade_pessimo}</td>
+		<td class="align-center">{$value.media}</td>
+	</tr>
+	{/loop}
+	
+	
+	
+
+	
+</table>
+

@@ -1,0 +1,38 @@
+<div class="container">
+<h1 class="titulo-formulario">{$title} Cursos</h1>
+<form id="formcurso" action="/crud/curso/{$action}" method="POST">
+
+	
+	<div class="form-row">
+	    <div class="col col1">
+	      <label for="formGroupExampleInput">Nome do Curso</label>
+	      <input type="text" id="nome_curso" name="nome_curso" class="form-control" placeholder="Digite o nome do curso" required>
+	    </div>
+
+
+	    <div class="col-7">
+      		<label>Tipo de Curso</label>
+          	<select type="text" id="idtipo" name="idtipo" class="form-control" required>
+	            <option value="">Escolha o tipo de Curso</option>
+	            {loop="$tipo"}
+	              <option value="{$value.idtipo}">{$value.nome_tipo}</option>
+	            {/loop}
+          	</select>
+    </div>
+	</div>
+	<div class="form-row">
+		<div class="col col1">
+	      <label for="formGroupExampleInput">Carga Horária</label>
+	      <input type="number" id="carga_horaria" name="carga_horaria" class="form-control" placeholder="Digite a carga horária do curso" required>
+	    </div>
+
+	    <div class="col col1">
+	      <label for="formGroupExampleInput">Vagas</label>
+	      <input type="number" id="vagas" name="vagas" class="form-control" placeholder="Digite o número de vagas referente ao curso" required>
+	    </div>
+	</div>
+	<button type="submit" class="btn btn-primary botao">Enviar</button>
+</div>
+
+
+</form>

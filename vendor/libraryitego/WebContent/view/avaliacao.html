@@ -1,0 +1,54 @@
+<h1 class="container titulo-formulario">Avaliação do Livro</h1>
+<div class="container">
+  <form action="/crud/avaliacao/insert" method="POST">
+    
+    <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">PATRIMÔNIO</th>
+        <th>LIVRO</th>
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$result"}
+      <tr>
+        <td scope="row">{$value.idpatrimonio}</td> 
+        <td scope="row">{$value.nome_livro}</td> 
+      </tr>
+     {/loop}
+     
+    </tbody>
+  </table>
+  
+   </div>
+
+  <div class="container">
+
+    <div class="estrelas">
+        <input type="radio" id="cm_star-empty" name="comentario" value="" checked/>
+        <label for="cm_star-1"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-1" name="comentario" value="Péssimo"/>
+        <label for="cm_star-2"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-2" name="comentario" value="Ruim"/>
+        <label for="cm_star-3"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-3" name="comentario" value="Regular"/>
+        <label for="cm_star-4"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-4" name="comentario" value="Ótimo"/>
+        <label for="cm_star-5"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-5" name="comentario" value="Excelente"/>
+    </div>
+
+       
+  </div>
+
+    <div class="container">
+          <input type="hidden" name="emprestimo_idemprestimo" value="{$idemprestimo}">
+         <button type="submit" class="btn btn-primary botao">Enviar</button>
+    </div>
+
+  </form>
+
+
+
+
+

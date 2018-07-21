@@ -1,0 +1,31 @@
+<div class="container">
+  <h1 class="titulo-formulario">{$title}</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">MATRÍCULA</th>
+        <th>CPF</th>
+        <th>CURSO</th>
+        <th>TIPO</th>
+        <th>TURNO</th>
+        <th>INÍCIO</th>
+        <th>TÉRMINO</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultturmahasaluno"}
+        <tr>
+            <td scope="row">{$value.matricula}</td>
+            <td>{$value.cpf}</td>
+            <td>{$value.nome_curso}</td>
+            <td>{$value.nome_tipo}</td>
+            <td>{$value.nome_turno}</td>
+            <td>{$value.data_inicio}</td>
+            <td>{$value.data_termino}</td>
+        </tr>
+        {/loop}
+    </tbody>
+  </table>
+</div>

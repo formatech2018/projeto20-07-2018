@@ -1,0 +1,24 @@
+{include="cadastro"}
+{include="edit_cadastro_usuario"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var idfuncionario = "{$idfuncionario}";
+			var idformacao = "{$idformacao}";
+			var idcargo = "{$idcargo}";
+
+
+			$("#formcadastro").append('<input type="hidden" name="idfuncionario" id="idfuncionario">');
+			$("#formcadastro").append('<input type="hidden" id="tipo" value="funcionario">');
+			$("#idfuncionario").val(idfuncionario);
+			$("#idformacao").val(idformacao);
+			$("#idcargo").val(idcargo);
+			$("#formcadastro").append('<input type="hidden" id="tipo_usuario" value="funcionario" name="tipo_usuario">');
+			$("#tipo_usuario").val('funcionario');
+			
+
+	});
+
+</script>

@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NOME DO LIVRO</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">SELECIONAR</th>
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultlivro"}
+      <tr>
+      
+        <th scope="row">{$value.nome_livro}</th> 
+        <td>{$value.isbn}</td>
+        <td><a href="/crud/livro/patrimonio/{$value.idlivro}/insert" class="btn btn-primary botao">Cadastrar Patrimônio</a></td>
+        
+        
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

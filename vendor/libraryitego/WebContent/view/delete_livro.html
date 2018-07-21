@@ -1,0 +1,38 @@
+<div class="container">
+<h1 class="titulo-formulario">{$title} Livro</h1>
+<form id="formturma" method="post" action="/crud/livro/{$action}">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ISBN</th>
+          <th scope="col">LIVRO</th>
+          <th scope="col">ANO</th>
+          <th scope="col">ASSUNTO</th>
+          <th scope="col">EDIÇÃO</th>
+          <th scope="col">EDITORA</th>
+          <th scope="col">ÁREA</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{$isbn}</td>
+          <td>{$nome_livro}</td>
+          <td>{$ano_livro}</td>
+          <td>{$assunto}</td>
+          <td>{$edicao}</td>
+          <td>{$nome_editora}</td>
+          <td>{$nome_area}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+        <div class="form-row">
+        <div class="col">
+            <input type="hidden"  id="idlivro" name="idlivro" value="{$idlivro}">
+            <button type="submit" class="btn btn-danger botao botaoexcluir">Excluir</button>
+        </div>
+    </div>
+</form>
+</div>

@@ -1,0 +1,17 @@
+{include="cadastro_area"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_area = "{$nome_area}";
+			var idarea = "{$idarea}";
+		
+			$("#nome_area").val(nome_area);
+			
+			$("#formlivroarea").append('<input type="hidden" name="idarea" id="idarea">');
+			$("#idarea").val(idarea);
+		
+	});
+
+</script>

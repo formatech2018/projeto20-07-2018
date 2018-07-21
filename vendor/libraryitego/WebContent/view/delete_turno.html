@@ -1,0 +1,19 @@
+<div class="container">
+	<h1 class="titulo-formulario">Excluir Turno</h1>
+    <form id="formturmaturno" action="/crud/turma/turno/delete" method="POST">
+        <div class="form-row">
+            <div class="col col1">
+              <label for="formGroupExampleInput">Nome do turno</label>
+              <input type="text"  name="nome_turno" id="nome_turno" value="{$nome_turno}" class="form-control" readonly="">
+              <input type="hidden"  name="idturno" id="idturno" value="{$idturno}" class="form-control" readonly="">
+            </div>
+       </div>
+
+       <div class="form-row">
+          <div class="col">
+            <button type="submit" class="btn btn-danger botao botaoexcluir">Excluir</button>
+          </div>
+       </div>
+   
+    </form>
+</div>

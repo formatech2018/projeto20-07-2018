@@ -1,0 +1,31 @@
+<div class="container">
+<h1 class="titulo-formulario">{$title} Curso</h1>
+<form id="formcurso" method="post" action="/crud/curso/{$action}">
+
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">NOME DO CURSO</th>
+	      <th scope="col">TIPO DO CURSO</th>
+	      <th scope="col">CARGA HORÁRIA</th>
+	      <th scope="col">VAGAS</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>{$nome_curso}</td>
+	      <td>{$nome_tipo}</td>
+	      <td>{$carga_horaria}</td>
+	      <td>{$vagas}</td>
+	    </tr>
+	    
+	  </tbody>
+	</table>
+		<div class="form-row">
+    	<div class="col">
+    		<input type="hidden"  id="idcurso" name="idcurso" value="{$idcurso}">
+			<button type="submit" class="btn btn-danger botao botaoexcluir">Excluir</button>
+		</div>
+	</div>
+</form>
+</div>

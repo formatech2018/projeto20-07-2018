@@ -1,0 +1,17 @@
+{include="cadastro_formacao_funcionario"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_formacao = "{$nome_formacao}";
+			var idformacao = "{$idformacao}";
+		
+			$("#nome_formacao").val(nome_formacao);
+			
+			$("#formformacaofuncionario").append('<input type="hidden" name="idformacao" id="idformacao">');
+			$("#idformacao").val(idformacao);
+		
+	});
+
+</script>

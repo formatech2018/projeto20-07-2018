@@ -1,0 +1,25 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Livros por Quantidade</h1>
+</div>
+<table class="tabela-livro">
+	<tr>
+		<th>Nome do livro</th>
+		<th>Editora</th>
+		<th>Área</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_livro}</td>
+		<td class="align-center">{$value.nome_editora}</td>
+		<td class="align-center">{$value.nome_area}</td>
+	</tr>
+	{/loop}
+</table>
+
+<table>
+	<tr>
+		<td class="strong">Total de Livros</td> 
+		<td class="align-center">{$total}</td>
+	</tr>
+</table>
+		

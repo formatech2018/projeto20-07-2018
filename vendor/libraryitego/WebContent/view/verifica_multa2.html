@@ -1,0 +1,46 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Verificação de existência de multa</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">DATA PREVISTA PARA A DEVOLUÇÃO</th>
+        <th>DATA DA DEVOLUÇÃO</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{$previsao}</td>
+        <td>{$devolucao}</td>
+       
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-sm table-primary">
+      <tbody>
+        <tr>
+          <th scope="row">SITUAÇÃO MULTA</th>
+          <td>{$exists_multa}</td>
+        </tr>
+        <tr>
+          <th scope="row">DIAS DE ATRASO</th>
+          <td>{$dias_atraso}</td>
+        </tr>
+        <tr>
+          <th scope="row">TOTAL DE LIVROS</th>
+          <td>{$total_livros}</td>
+        </tr>
+        <tr>
+          <th scope="row">VALOR DIÁRIO DA MULTA</th>
+          <td>{$valor_diario_multa}</td>
+        </tr>
+        <tr>
+          <th scope="row">TOTAL A PAGAR</th>
+          <td>{$valor_total_multa}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

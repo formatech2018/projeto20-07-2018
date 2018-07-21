@@ -1,0 +1,55 @@
+
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+
+			
+				var idusuario = "{$idusuario}";
+				var nome_usuario = "{$nome_usuario}";
+				var cpf = "{$cpf}";
+				var telefone_fixo = "{$telefone_fixo}";
+				var telefone_celular = "{$telefone_celular}";
+				var email = "{$email}";
+				var dtnasc = "{$dtnasc}";
+				var idendereco = "{$idendereco}";
+				var rua = "{$rua}";
+				var complemento = "{$complemento}";
+				var numero = "{$numero}";
+				var bairro = "{$bairro}";
+				var cep = "{$cep}";
+				var cidade = "{$cidade}";
+				var estado = "{$estado}";
+			
+
+			$("#seguranca").remove();	
+			$("#tipo-remove").remove();
+			
+
+			$("#nome_usuario").val(nome_usuario);
+			$("#cpf").val(cpf);
+			$("#telefone_fixo").val(telefone_fixo);
+			$("#telefone_celular").val(telefone_celular);
+			$("#email").val(email);
+			$("#dtnasc").val(dtnasc);
+			$("#rua").val(rua);
+			$("#complemento").val(complemento);
+			$("#numero").val(numero);
+			$("#bairro").val(bairro);
+			$("#cep").val(cep);
+			$("#cidade").val(cidade);
+			$("#estado").val(estado);
+			
+			
+			
+			$("#formcadastro").append('<input type="hidden" name="tipo_usuario" id="tipo_usuario">');
+			$("#formcadastro").append('<input type="hidden" name="idusuario" id="idusuario">');
+			$("#formcadastro").append('<input type="hidden" name="idendereco" id="idendereco">');
+
+			
+			$("#idusuario").val(idusuario);
+			$("#idendereco").val(idendereco);
+
+	});
+
+</script>

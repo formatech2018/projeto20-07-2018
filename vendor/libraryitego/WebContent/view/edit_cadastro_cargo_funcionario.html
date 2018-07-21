@@ -1,0 +1,19 @@
+{include="cadastro_cargo_funcionario"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_cargo = "{$nome_cargo}";
+			var nivel = "{$nivel}";
+			var idcargo = "{$idcargo}";
+		
+			$("#nome_cargo").val(nome_cargo);
+			$("#nivel").val(nivel);
+
+			$("#formcargofuncionario").append('<input type="hidden" name="idcargo" id="idcargo">');
+			$("#idcargo").val(idcargo);
+		
+	});
+
+</script>

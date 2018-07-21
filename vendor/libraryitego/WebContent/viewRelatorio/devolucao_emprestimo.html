@@ -1,0 +1,45 @@
+<h1 class="color-fundo-titulo titulo titulo-autorizacao">Devolução de Empréstimo de Livro</h1>
+
+<p class="p">Declaro que o usuário <strong>{$nome_usuario}</strong>, portador do cpf <strong>{$cpf}</strong> e telefone <strong>{$telefone_celular}</strong>.</p>
+<p class="p">Realizou a devolução do(s) livro(s):</p>
+
+<table id="tabela-devolucao1">
+	<tr>
+		<th>Patrimônio</th>
+		<th>Nome do livro</th>
+		<th>Data de empréstimo</th>
+		<th>Previsão da devolução</th>
+		<th>Data da devolução</th>
+	</tr>
+	{loop="$resultado"}
+	<tr>
+		<td>{$value.idpatrimonio}</td>
+		<td>{$value.nome_livro}</td>
+		<td>{$value.data_emprestimo}</td>
+		<td>{$value.data_previsao}</td>
+		<td>{$value.data_devolucao}</td>
+	</tr>
+	{/loop}
+</table>
+	<h1 class="color-fundo-titulo titulo titulo-autorizacao2">Informações Complementares</h1>
+<table id="tabela-devolucao2">
+	<tr>
+		<th>Patrimônio</th>
+		<th>Dias de atraso na devolução</th>
+		<th>Valor diário da multa</th>
+		<th>Valor total multa</th>
+	</tr>
+	{loop="$resultado"}
+	<tr>
+		<td>{$value.idpatrimonio}</td>
+		<td>{$value.atraso_devolucao}</td>
+		<td>R$ {$value.valor_diario},00</td>
+		<td>R$ {$value.valor_total_multa},00</td>
+	</tr>
+	{/loop}
+	
+</table>
+
+<p>Anápolis {$data_devolucao}</p>
+<div class="assinatura lado-left">Responsável pelo Recebimento</div>
+<div class="assinatura lado-right">Assinatura do Usuário</div>

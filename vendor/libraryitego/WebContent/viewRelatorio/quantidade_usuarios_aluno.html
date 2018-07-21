@@ -1,0 +1,22 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Usuários por Aluno</h1>
+</div>
+<table class="tabela-aluno">
+	<tr>
+		<th class="align-left">Aluno</th>
+		<th class="align-left">Email</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_usuario}</td>
+		<td>{$value.email}</td>
+	</tr>
+	{/loop}
+</table>
+
+<table>
+	<tr>
+		<td class="strong">Total de Alunos</td> 
+		<td class="align-center">{$total}</td>
+	</tr>
+</table>

@@ -1,0 +1,29 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Lista de Cargos com Nível de Acesso</h1>
+
+   <a href="/relatorio/cargo/nivel" class="btn btn-info botao botao-nivel">Sobre os Níveis de Acesso</a>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">CARGO</th>
+        <th>NÍVEL</th>
+        <th>AÇÃO</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$result"}
+      <tr>
+      
+        <td scope="row">{$value.nome_cargo}</td> 
+        <td>{$value.nivel}</td>
+         <td><a href="/crud/cargo/nivel/{$value.idcargo}/update" class="btn btn-warning botao">Editar Nível</a></td>
+ 
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+ 
+</div>

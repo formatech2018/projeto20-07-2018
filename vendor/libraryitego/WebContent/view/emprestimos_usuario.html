@@ -1,0 +1,30 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Seus Empréstimos</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">PATRIMÔNIO</th>
+        <th>LIVRO</th>
+        <th>DATA DO EMPRÉSTIMO</th>
+        <TH>DATA DA DEVOLUÇÃO</TH>
+        <TH>AVALIAÇÃO</TH>
+       
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$result"}
+      <tr>
+      
+        <td scope="row">{$value.idpatrimonio}</td> 
+        <td scope="row">{$value.nome_livro}</td> 
+        <td scope="row">{$value.data_emprestimo}</td> 
+        <td scope="row">{$value.data_devolucao}</td> 
+        <td><a href="/crud/avaliacao/{$value.idemprestimo}/insert" class="btn btn-primary botao {$value.avaliacao}">Realizar Avaliação</a></td>
+      </tr>
+     {/loop}
+     
+    </tbody>
+  </table>
+</div>

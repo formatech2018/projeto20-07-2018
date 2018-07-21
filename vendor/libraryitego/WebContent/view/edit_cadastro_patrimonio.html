@@ -1,0 +1,33 @@
+<div class="container">
+<h1 class="titulo-formulario">{$title} Patrimônio do Livro</h1>
+<form id="formlivropatrimonio" method="post" action="/crud/livro/patrimonio/{$action}">	
+	
+	<div class="form-row">
+	<div class="col col1">
+	     <label for="formGroupExampleInput">Patrimônio do Livro</label>
+	     <input type="number" name="idpatrimonio" id="idpatrimonio" class="form-control" required>
+	    
+ 	</div>
+    	
+	</div>
+	<div>
+			<button type="submit" class="btn btn-primary botao">Enviar</button>
+	</div>
+</form>
+</div>
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			
+			var idpatrimonio = "{$idpatrimonio}";
+		
+			$("#idpatrimonio").val(idpatrimonio);
+
+			$("#formlivropatrimonio").append('<input type="hidden" name="patrimonioantigo" id="patrimonioantigo">');
+			$("#patrimonioantigo").val(idpatrimonio);
+		
+	});
+
+</script>

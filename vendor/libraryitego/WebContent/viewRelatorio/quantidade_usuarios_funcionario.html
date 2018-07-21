@@ -1,0 +1,24 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Usuários por Funcionário</h1>
+</div>
+<table class="tabela-funcionario">
+	<tr>
+		<th class="align-left">Funcionário</th>
+		<th class="align-left">Cargo</th>
+		<th class="align-left">Email</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_usuario}</td>
+		<td>{$value.nome_cargo}</td>
+		<td>{$value.email}</td>
+	</tr>
+	{/loop}
+</table>
+
+<table>
+	<tr>
+		<td class="strong">Total de Funcionários</td> 
+		<td class="align-center">{$total}</td>
+	</tr>
+</table>

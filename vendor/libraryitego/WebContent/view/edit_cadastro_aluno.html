@@ -1,0 +1,19 @@
+{include="cadastro"}
+{include="edit_cadastro_usuario"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+
+
+		
+			var idaluno = "{$idaluno}";
+			$("#formcadastro").append('<input type="hidden" name="idaluno" id="idaluno">');
+			$("#idaluno").val(idaluno);
+			$("#tipo_usuario").val("aluno");
+
+			$("#campos-funcionario").remove();
+
+	});
+
+</script>

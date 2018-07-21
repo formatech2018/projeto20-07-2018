@@ -1,0 +1,22 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    {loop="$pages"}
+    <li class="page-item ">
+      <a class="page-link" href="/crud/{$table}/0/{$value.limite}/read" tabindex="-1">Primeira</a>
+    </li>
+    
+      <li class='page-item {if="$value.numero1>$value.totalpag"} disabled {else}  {/if}'><a class="page-link" href="/crud/{$table}/{$value.pag1}/{$value.limite}/read">{$value.numero1}</a></li>
+      
+      <li class='page-item {if="$value.numero2>$value.totalpag"} disabled {else}  {/if}'><a class="page-link" href="/crud/{$table}/{$value.pag2}/{$value.limite}/read">{$value.numero2}</a></li>
+      
+      <li class='page-item {if="$value.numero3>$value.totalpag"} disabled {else}  {/if}'><a class="page-link" href="/crud/{$table}/{$value.pag3}/{$value.limite}/read">{$value.numero3}</a></li>
+
+     
+    
+    
+    <li class="page-item ">
+      <a class="page-link " href="/crud/{$table}/{$value.ultima}/{$value.limite}/read">Última</a>
+    </li>
+    {/loop}
+  </ul>
+</nav>

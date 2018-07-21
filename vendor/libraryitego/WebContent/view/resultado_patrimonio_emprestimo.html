@@ -1,0 +1,40 @@
+<div class="container">
+	<form action="/crud/emprestimo/insert" method="POST">
+		<table class="table">
+		<h1 class="titulo-formulario">Empréstimo de livro para {$nome_usuario}</h1>
+		
+			<input type="hidden" name="idusuario" value="{$idusuario}">
+
+			
+		
+			<thead>
+				<tr>
+					 <th scope="col">PATRIMÔNIO</th>
+					 <th scope="col">LIVRO</th>
+					 <th scope="col">EDITORA</th>
+					 <th scope="col">ÁREA</th> 
+				</tr>
+			</thead>
+			<tbody>
+				{$valor = 0}
+				{loop="$patrimonio"}
+				{$valor = $valor+1}
+				<tr>
+					<td><input type="number" name="idpatrimonio{$valor}" value="{$value.idpatrimonio}" readonly></td>
+					<td>{$value.nome_livro}</td>
+					<td>{$value.nome_editora}</td>
+					<td>{$value.nome_area}</td>
+				</tr>
+				{/loop}
+			</tbody>
+		
+		
+		</table>
+
+	<div>
+		<a class='btn btn-warning botao' href="/crud/emprestimo/{$idusuario}/usuario/patrimonio/search">Voltar</a>
+			<button class="btn btn-primary botao">Finalizar Empréstimo</button>
+		
+	</form>
+	</div>
+</div>

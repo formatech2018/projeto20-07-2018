@@ -1,0 +1,32 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Funcionários Desativados</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">FUNCIONÁRIO</th>
+        <th scope="col">CPF</th>
+        <th scope="col">CARGO</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">AÇÃO</th>
+        
+       
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$result"}
+      <tr>
+      
+        <th scope="row">{$value.nome_usuario}</th> 
+        <td>{$value.cpf}</td>
+        <td>{$value.nome_cargo}</td>
+        <td>{$value.email}</td>
+        <td><a href="/valida/funcionario/{$value.usuario_idusuario}" class="btn btn-primary botao tamanhob"> Ativar</a>
+        <a href="/usuario/funcionario/delete/{$value.usuario_idusuario}" class="btn btn-danger botao tamanhob botaoexcluir">Excluir</a></td>
+        
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Cursos por Tipo</h1>
+</div>
+<table>
+	<tr>
+		<th>Tipo de Curso</th>
+		<th>Quantidade de Cursos por Tipo</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_tipo}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+	{loop="$result2"}
+	<tr>
+		<td>{$value.nome_tipo}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+</table>
+<table>
+	<tr>
+		<td class="strong">Total de Tipos de Curso</td> 
+		<td class="align-center">{$total}</td>
+	</tr>
+</table>

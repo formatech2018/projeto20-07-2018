@@ -1,0 +1,47 @@
+    <link rel="stylesheet" href="/vendor/libraryitego/WebContent/view/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/libraryitego/WebContent/view/bootstrap/css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+</head>
+<body>
+  
+  
+
+  <div class="container topo">
+
+  <div class="row">
+    
+  <div class="col-sm">  
+    <img src="/vendor/libraryitego/WebContent/view/img/logoitego.png" class="rounded float-left espaco-topo espaco-bottom" alt="Logo do ITEGO">
+  </div>
+  <div class="col-sm">
+    <img src="/vendor/libraryitego/WebContent/view/img/logotopo.png" class="rounded float-right espaco-topo espaco-bottom" alt="Logo do topo">
+  </div>
+ 
+  </div>
+</div>
+<div class="container topo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary topo">
+  
+
+  <!-- <div class="navbar navbar-expand-lg navbar-dark topo " id="navbarSupportedContent"> -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <a class="links-menus style-menu nav-link" href="/">Home</a>
+    </li>
+      {loop="$menu"}
+      <li class="nav-item {$value.dropdown}">
+        <a class="nav-link {$value.toggle} style-menu " href='{$value.link}' data-toggle="{$value.dropdown}" >{$value.item}</a>
+        {if="$value.selected"}
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {loop="$value.submenu"}
+              <a class="dropdown-item sub-links" href="{$value.sublink}">{$value.subitem}</a>
+            {/loop}
+          </div>
+        {/if}
+      </li>
+      {/loop}
+    </ul>
+  <!-- </div> -->
+</nav>
+</div>

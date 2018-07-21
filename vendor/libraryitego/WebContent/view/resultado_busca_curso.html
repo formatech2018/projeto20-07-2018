@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NOME DO CURSO</th>
+        <th scope="col">TIPO DO CURSO</th>
+        <th scope="col">SELECIONAR</th>
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultcurso"}
+      <tr>
+      
+        <th scope="row">{$value.nome_curso}</th> 
+        <td>{$value.nome_tipo}</td>
+        <td><a href="/crud/curso/turma/{$value.idcurso}/insert" class="btn btn-primary botao">Cadastrar Turma</a></td>
+        
+        
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

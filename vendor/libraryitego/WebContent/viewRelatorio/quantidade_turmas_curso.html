@@ -1,0 +1,24 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Turmas por Curso</h1>
+</div>
+<table class="tabelacurso">
+	<tr>
+		<th class="align-left">Curso</th>
+		<th class="align-left">Tipo</th>
+		<th>Quantidade de Turmas por Curso</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_curso}</td>
+		<td>{$value.nome_tipo}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+	{loop="$result2"}
+	<tr>
+		<td>{$value.nome_curso}</td>
+		<td>{$value.nome_tipo}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+</table>

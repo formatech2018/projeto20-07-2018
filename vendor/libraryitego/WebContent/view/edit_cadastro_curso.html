@@ -1,0 +1,23 @@
+{include="cadastro_curso"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_curso = "{$nome_curso}";
+			var carga_horaria = "{$carga_horaria}";
+			var vagas = "{$vagas}";
+			var idtipo = "{$idtipo}";
+			var idcurso = "{$idcurso}";
+		
+			$("#nome_curso").val(nome_curso);
+			$("#carga_horaria").val(carga_horaria);
+			$("#vagas").val(vagas);
+			$("#idtipo").val(idtipo);
+			
+			$("#formcurso").append('<input type="hidden" name="idcurso" id="idcurso">');
+			$("#idcurso").val(idcurso);
+		
+	});
+
+</script>

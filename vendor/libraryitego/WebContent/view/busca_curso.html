@@ -1,0 +1,26 @@
+<div class="container">
+<h1 class="titulo-formulario">Pesquisar Curso</h1>
+<form action="/crud/curso/search" method="POST">
+	<div class="row">
+	    
+		 <div class="col">
+		 	<label>Nome do Curso</label>
+			<input type="text" id="nome_curso" name="nome_curso" class="form-control" required>
+		</div>
+		 <div class="col">
+		 	 <label>Tipo do Curso</label>
+          	<select type="text" id="idtipo" name="idtipo" class="form-control" >
+            <option value="">Escolha seu tipo</option>
+            {loop="$tipo"}
+              <option value="{$value.idtipo}">{$value.nome_tipo}</option>
+            {/loop}
+          </select>
+		</div>
+
+	</div>
+ 	<div>
+	 	<button class="btn btn-primary botao">Pesquisar</button>
+	 </div>
+
+</form>
+</div>

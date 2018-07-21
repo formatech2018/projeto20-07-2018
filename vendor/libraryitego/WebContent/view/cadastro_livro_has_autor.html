@@ -1,0 +1,23 @@
+<div class="container">
+<form id="formlivrohasautor" method="post" action="/crud/livro/autores/{$action}">
+	
+			<input type="hidden" name="idlivro" value="{$idlivro}">
+		
+
+	<div class="form-row">
+    	<div class="col">
+			<select name="idautor" class="form-control" required >
+				<option value="">selecione o autor</option>
+				{loop="$autor"}
+				 <option value="{$value.idautor}">{$value.nome_autor}</option>
+		            {/loop}
+			</select>
+		</div>
+	</div>
+	<div class="form-row">
+    	<div class="col">
+			<button type="submit" class="btn btn-primary botao">Enviar</button>
+		</div>
+	</div>
+</form>
+</div>

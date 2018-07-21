@@ -1,0 +1,28 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Empréstimos por Patrimônio</h1>
+</div>
+<table>
+	<tr>
+		<th>Patrimônio</th>
+		<th>Quantidade de Empréstimos por patrimônio</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.idpatrimonio}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+	{loop="$result2"}
+	<tr>
+		<td>{$value.idpatrimonio}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+</table>
+
+<table>
+	<tr>
+		<td class="strong">Total de Patrimônios</td> 
+		<td class="align-center">{$total}</td>
+	</tr>
+</table>

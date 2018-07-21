@@ -1,0 +1,26 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Listar Tipos de Cursos</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">TIPO DE CURSO</th>
+        <th>AÇÃO</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resulttipo"}
+      <tr>
+      
+        <td scope="row">{$value.nome_tipo}</td> 
+         <td><a href="/crud/curso/tipo/{$value.idtipo}/update" class="btn btn-warning botao">Editar</a>
+          <a href="/crud/curso/tipo/{$value.idtipo}/delete" class="btn btn-danger botao">Excluir</a>
+         </td>
+ 
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+<h1 class="titulo-formulario">{$title} Turma</h1>
+<form id="formturma" method="post" action="/crud/curso/turma/{$action}">
+
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">CÓDIGO DA TURMA</th>
+	      <th scope="col">NOME DO CURSO</th>
+	      <th scope="col">TIPO DO CURSO</th>
+	      <th scope="col">TURNO</th>
+	      <th scope="col">INÍCIO</th>
+	       <th scope="col">PREVISÃO DE TÉRMINO</th>
+
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>{$idturma}</td>
+	      <td>{$nome_curso}</td>
+	      <td>{$nome_tipo}</td>
+	      <td>{$nome_turno}</td>
+	      <td>{$data_inicio}</td>
+	      <td>{$data_termino}</td>
+	    </tr>
+	    
+	  </tbody>
+	</table>
+		<div class="form-row">
+    	<div class="col">
+    		<input type="hidden"  id="idturma" name="idturma" value="{$idturma}">
+			<button type="submit" class="btn btn-danger botao botaoexcluir">Excluir</button>
+		</div>
+	</div>
+</form>
+</div>
+
+

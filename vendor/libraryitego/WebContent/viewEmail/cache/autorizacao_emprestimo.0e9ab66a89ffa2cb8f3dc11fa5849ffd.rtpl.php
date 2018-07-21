@@ -1,0 +1,1 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><h4>Autorização de Empréstimo da biblioteca Library Itego</h4>

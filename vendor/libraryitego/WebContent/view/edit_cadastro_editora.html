@@ -1,0 +1,17 @@
+{include="cadastro_editora"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_editora = "{$nome_editora}";
+			var ideditora = "{$ideditora}";
+		
+			$("#nome_editora").val(nome_editora);
+			
+			$("#formlivroeditora").append('<input type="hidden" name="ideditora" id="ideditora">');
+			$("#ideditora").val(ideditora);
+		
+	});
+
+</script>

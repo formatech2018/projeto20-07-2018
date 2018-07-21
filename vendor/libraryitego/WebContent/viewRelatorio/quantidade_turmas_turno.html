@@ -1,0 +1,28 @@
+<div class="color-fundo-titulo">
+<h1 class="align-center titulo">Relatório de Turmas por Turno</h1>
+</div>
+<table>
+	<tr>
+		<th>Turno</th>
+		<th>Quantidade de Turmas por Turno</th>
+	</tr>
+	{loop="$result"}
+	<tr>
+		<td>{$value.nome_turno}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+	{loop="$result2"}
+	<tr>
+		<td>{$value.nome_turno}</td>
+		<td class="align-center">{$value.quantidade}</td>
+	</tr>
+	{/loop}
+</table>
+
+<table>
+	<tr>
+		<td class="strong">Total de Turnos</td> 
+		<td class="align-center">{$total}</td>
+	</tr>
+</table>

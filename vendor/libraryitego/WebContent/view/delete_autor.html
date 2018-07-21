@@ -1,0 +1,19 @@
+<div class="container">
+	<h1 class="titulo-formulario">Excluir Autor</h1>
+    <form id="formlivroautor" action="/crud/livro/autor/delete" method="POST">
+        <div class="form-row">
+            <div class="col col1">
+              <label for="formGroupExampleInput">Nome do Autor</label>
+              <input type="text"  name="nome_autor" id="nome_autor" value="{$nome_autor}" class="form-control" readonly="">
+              <input type="hidden"  name="idautor" id="idautor" value="{$idautor}" class="form-control" readonly="">
+            </div>
+       </div>
+
+       <div class="form-row">
+          <div class="col">
+            <button type="submit" class="btn btn-danger botao botaoexcluir">Excluir</button>
+          </div>
+       </div>
+   
+    </form>
+</div>

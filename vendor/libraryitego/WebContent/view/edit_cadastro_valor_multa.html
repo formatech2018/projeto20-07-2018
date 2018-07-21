@@ -1,0 +1,17 @@
+{include="cadastro_valor_multa"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var valor_diario_multa = "{$valor_diario_multa}";
+			var idvalor = "{$idvalor}";
+		
+			$("#valor_diario_multa").val(valor_diario_multa);
+			
+			$("#formvalormulta").append('<input type="hidden" name="idvalor" id="idvalor">');
+			$("#idvalor").val(idvalor);
+		
+	});
+
+</script>

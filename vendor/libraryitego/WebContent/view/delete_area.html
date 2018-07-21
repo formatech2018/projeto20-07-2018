@@ -1,0 +1,19 @@
+<div class="container">
+	<h1 class="titulo-formulario">Excluir Área</h1>
+    <form id="formlivroarea" action="/crud/livro/area/delete" method="POST">
+        <div class="form-row">
+            <div class="col col1">
+              <label for="formGroupExampleInput">Nome da Área</label>
+              <input type="text"  name="nome_area" id="nome_area" value="{$nome_area}" class="form-control" readonly="">
+              <input type="hidden"  name="idarea" id="idarea" value="{$idarea}" class="form-control" readonly="">
+            </div>
+       </div>
+
+       <div class="form-row">
+          <div class="col">
+            <button type="submit" class="btn btn-danger botao botaoexcluir">Excluir</button>
+          </div>
+       </div>
+   
+    </form>
+</div>

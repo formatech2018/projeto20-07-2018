@@ -1,0 +1,17 @@
+{include="cadastro_tipo_curso"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var nome_tipo = "{$nome_tipo}";
+			var idtipo = "{$idtipo}";
+		
+			$("#nome_tipo").val(nome_tipo);
+			
+			$("#formtipocurso").append('<input type="hidden" name="idtipo" id="idtipo">');
+			$("#idtipo").val(idtipo);
+		
+	});
+
+</script>

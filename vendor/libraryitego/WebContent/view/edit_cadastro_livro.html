@@ -1,0 +1,68 @@
+<link rel="stylesheet" type="text/css" href="/vendor/libraryitego/WebContent/view/bootstrap/css/cadastro.css">
+
+<form id="formlivro" action="/crud/livro/{$action}" method="POST">
+
+
+
+<div class="container">
+
+  <h1 class="container titulo-formulario">{$title} Livro</h1>
+
+  <div class="container">
+  <div class="form-row">
+    <div class="col col1">
+      <label for="formGroupExampleInput">ISBN</label>
+      <input type="text" id="isbn" name="isbn" value="{$isbn}" class="form-control" placeholder="Digite o ISBN do livro" required>
+    </div>
+    <div class="col col1">
+      <label for="formGroupExampleInput">Nome do Livro</label>
+      <input type="text" id="nome_livro" name="nome_livro" value="{$nome_livro}" class="form-control" placeholder="Digite o nome do livro" required>
+    </div>
+    <div class="col col1">
+      <label for="formGroupExampleInput">Ano</label>
+      <input type="number" id="ano_livro" name="ano_livro" value="{$ano_livro}" class="form-control" placeholder="Digite o ano de publicação do livro" required>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+  <div class="form-row">
+    <div class="col col2">
+      <label for="formGroupExampleInput">Assunto</label>
+      <input type="text" id="assunto" name="assunto" value="{$assunto}" class="form-control" placeholder="Digite o assunto do livro" required>
+    </div>
+    <div class="col col2">
+      <label for="formGroupExampleInput">Edição</label>
+      <input type="text" id="edicao" name="edicao" value="{$edicao}" class="form-control" placeholder="Digite a Edição do livro" required>
+    </div>
+  </div>
+  </div>
+  <div class="container" >
+  <div class="form-row">
+    <div class="col">
+      <label>Editora</label>
+          <select type="text" id="ideditora" name="ideditora" class="form-control" >
+            <option value="{$ideditora}">{$nome_editora}</option>
+            {loop="$editoras"}
+              <option value="{$value.ideditora}">{$value.nome_editora}</option>
+            {/loop}
+          </select>
+          <small class="form-text text-muted">Caso não encontre a editora desejada <a href="/crud/livro/editora/insert">clique aqui</a> e cadastre.</small>
+           
+    </div>
+    <div class="col">
+      <label>Área</label>
+          <select type="text" id="idarea" name="idarea" class="form-control" >
+            <option value="{$idarea}">{$nome_area}</option>
+            {loop="$areas"}
+              <option value="{$value.idarea}">{$value.nome_area}</option>
+            {/loop}
+          </select>
+          <small class="form-text text-muted"> Caso não encontre a área desejada<a href="/crud/livro/area/insert">clique aqui</a> e cadastre.</small>
+  </div> 
+   
+  </div>
+  <input type="hidden" name="idlivro" value="{$idlivro}">
+   <button type="submit" class="btn btn-primary botao">Continuar</button>
+</div>
+
+</form>

@@ -1,0 +1,28 @@
+<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					 <th scope="col">CPF</th>
+					 <th scope="col">NOME</th>
+					 <th scope="col">DATA DE NASCIMENTO</th>
+					 <th scope="col">STATUS</th>
+					 <th scope="col">EMPRÉSTIMOS ATIVOS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{$cpf}</td>
+					<td>{$nome_usuario}</td>
+					<td>{$dtnasc}</td>
+					<td>{if="$status == 0"} <a href="/crud/emprestimo/{$idusuario}/usuario/funcionario/detalhes">Indisponível</a> {else} Disponível {/if}</td>
+					<td>{$livrodisp}</td>
+
+				</tr>
+			</tbody>
+
+		</table>
+
+	<div>
+		<a class='btn btn-primary botao {if="$status == 0"} disabled {else}  {/if}' href="/crud/emprestimo/{$idusuario}/usuario/patrimonio/search">Continuar</a>
+	</div>
+</div>

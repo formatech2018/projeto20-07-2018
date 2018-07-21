@@ -1,0 +1,25 @@
+<div class="container">
+	<table class="table">
+		<h1>Lista de Usuários</h1>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Senha</th>
+    </tr>
+  </thead>
+  <tbody>
+  	{loop="$usuario"}
+	    <tr>
+	      <th scope="row">{$value.idusuario}</th>
+	      <td>{$value.nome}</td>
+	      <td>{$value.email}</td>
+	      <td>{$value.senha}</td>
+	    </tr>
+    {/loop}
+  </tbody>
+</table>
+</div>
+	
+

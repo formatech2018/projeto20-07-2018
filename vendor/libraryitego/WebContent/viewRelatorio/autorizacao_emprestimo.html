@@ -1,0 +1,28 @@
+<h1 class="color-fundo-titulo titulo titulo-autorizacao">Autorização de Empréstimo de Livro</h1>
+
+<p class="p">Fica autorizado o usuário <strong>{$nome_usuario}</strong>, portador do cpf <strong>{$cpf}</strong> e telefone <strong>{$telefone_celular}</strong>.</p>
+<p class="p">O empréstimo do(s) livro(s):</p>
+
+<table id="tabela-autorizacao">
+	<tr>
+		<th>Patrimônio</th>
+		<th>Nome do livro</th>
+		<th>Data de empréstimo</th>
+		<th>Data limite para devolução</th>
+	</tr>
+	{loop="$resultado"}
+	<tr>
+		<td>{$value.idpatrimonio}</td>
+		<td>{$value.nome_livro}</td>
+		<td>{$value.data_emprestimo}</td>
+		<td>{$value.previsao}</td>
+	</tr>
+	{/loop}
+</table>
+<p class="paragrafo">Durante o período de <strong>07</strong> (sete) dias, responsabiliza-se pela guarda, zelo e conservação do exemplar e de efetuar davolução no dia marcado, o usuário da biblioteca, conforme o Estatuto da Biblioteca.</p>
+
+<p class="paragrafo">Caso a devolução não seja realizada na prevista data, haverá cobrança de <strong>multa</strong> no valor diário de R$ {$valor_diario_multa},00 correspondente ao período de atraso e as demais sessões regidas pelo referido estatuto.</p>
+
+<p>Anápolis {$data_emprestimo}</p>
+<div class="assinatura lado-left">Responsável pela Autorização </div>
+<div class="assinatura lado-right">Assinatura do Usuário</div>

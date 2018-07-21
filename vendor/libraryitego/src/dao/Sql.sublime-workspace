@@ -1,0 +1,514 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"foreach\tforeach …"
+			],
+			[
+				"bo",
+				"border-style"
+			],
+			[
+				"border-co",
+				"border-collapse"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"p",
+				"peso"
+			],
+			[
+				"a",
+				"altura"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"s",
+				"statment"
+			],
+			[
+				"sta",
+				"statment"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"us",
+				"userJson"
+			],
+			[
+				"SPL",
+				"spl_autoload"
+			],
+			[
+				"re",
+				"req1\trequire_once …"
+			],
+			[
+				"cl",
+				"class_name"
+			],
+			[
+				"js",
+				"jsonRes"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"json",
+				"jsonUser"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"c",
+				"conn"
+			],
+			[
+				"form",
+				"form_login"
+			],
+			[
+				"req",
+				"req1\trequire_once …"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"err",
+				"error_reporting"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"nom",
+				"nomeUsuario"
+			],
+			[
+				"nex",
+				"nextInt"
+			],
+			[
+				"t",
+				"tNOME"
+			],
+			[
+				"C",
+				"Cliente"
+			],
+			[
+				"pri",
+				"printListFuncionario"
+			],
+			[
+				"func",
+				"funcionario"
+			],
+			[
+				"fun",
+				"funcionario"
+			],
+			[
+				"ne",
+				"nextLine"
+			],
+			[
+				"S",
+				"Scanner"
+			],
+			[
+				"se",
+				"setEscolhaVendedor"
+			],
+			[
+				"set",
+				"setEscolhaGerente"
+			],
+			[
+				"es",
+				"escolhaMenu"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"esc",
+				"escolhaMenu"
+			],
+			[
+				"PR",
+				"println"
+			],
+			[
+				"getLi",
+				"getListFuncionario"
+			],
+			[
+				"get",
+				"getListVeiculo"
+			],
+			[
+				"ve",
+				"veiculoList"
+			],
+			[
+				"getL",
+				"getListFuncionario"
+			],
+			[
+				"f",
+				"funcionario"
+			],
+			[
+				"Ve",
+				"Veiculo"
+			],
+			[
+				"Ven",
+				"Venda"
+			],
+			[
+				"Arra",
+				"ArrayList"
+			],
+			[
+				"A",
+				"Avenida"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"ca",
+				"cargo"
+			],
+			[
+				"pm",
+				"pmaior"
+			],
+			[
+				"ma",
+				"maior"
+			],
+			[
+				"idade",
+				"idade"
+			],
+			[
+				"pe",
+				"pessoa1"
+			],
+			[
+				"pes",
+				"pessoa2"
+			],
+			[
+				"d",
+				"diferenca"
+			],
+			[
+				"x",
+				"y-x"
+			],
+			[
+				"in",
+				"insertList"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"de",
+				"departamento"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/opt/lampp/htdocs/teste3/estilo.css",
+		"/opt/lampp/htdocs/teste3/index.php",
+		"/home/modesto/Área de Trabalho/index.html",
+		"/opt/lampp/htdocs/teste2/src/config/config.php",
+		"/opt/lampp/htdocs/teste2/src/control/ControllerUsuario.php",
+		"/opt/lampp/htdocs/teste2/WebContent/index.php",
+		"/opt/lampp/htdocs/teste2/src/model/Usuario.php",
+		"/opt/lampp/htdocs/teste2/src/config/autoload.php",
+		"/opt/lampp/htdocs/teste2/src/dao/Sql.php",
+		"/opt/lampp/htdocs/teste2/src/config/dao.php",
+		"/opt/lampp/htdocs/teste/view/manterusuario/nav.php",
+		"/opt/lampp/htdocs/teste/view/manterusuario/autoload.php",
+		"/opt/lampp/htdocs/teste/body.php",
+		"/opt/lampp/htdocs/teste/index.php",
+		"/opt/lampp/htdocs/teste/head.php",
+		"/opt/lampp/htdocs/teste/view/manterusuario/default.php",
+		"/opt/lampp/htdocs/teste/model/Usuario.php",
+		"/opt/lampp/htdocs/teste/Usuario.php",
+		"/opt/lampp/htdocs/teste/nav.php",
+		"/opt/lampp/htdocs/teste/config/autoload.php",
+		"/opt/lampp/htdocs/teste/index2.php",
+		"/opt/lampp/htdocs/teste/DAO.php",
+		"/opt/lampp/htdocs/teste/config/config.php",
+		"/opt/lampp/htdocs/teste/config.php",
+		"/opt/lampp/htdocs/teste/conf.php",
+		"/opt/lampp/htdocs/certificate/index.php",
+		"/opt/lampp/htdocs/certificate/login.php",
+		"/opt/lampp/htdocs/certificate/header_principal.php",
+		"/opt/lampp/htdocs/certificate/conf/conf.php",
+		"/opt/lampp/htdocs/certificate/conf/bootstrap/docs/4.0/examples/carousel/index.html",
+		"/opt/lampp/htdocs/certificate/conf/bootstrap.php",
+		"/opt/lampp/htdocs/HelloWord/index.php",
+		"/opt/lampp/htdocs/certificate/conf/bootstrap/docs/4.0/examples/starter-template/index.html",
+		"/opt/lampp/htdocs/HelloWord/navbar.php",
+		"/opt/lampp/htdocs/HelloWord/recebe_form.php",
+		"/home/modesto/Área de Trabalho/sublime_text",
+		"/home/modesto/Área de Trabalho/sublime.exe",
+		"/media/modesto/SOCORRO/PROGRAMAÇÃO 2/AULA DIA29/evendas/FuncionarioController.java",
+		"/media/modesto/SOCORRO/PROGRAMAÇÃO 2/AULA DIA29/evendas/Funcionario.java",
+		"/media/modesto/SOCORRO/PROGRAMAÇÃO 2/AULA DIA29/evendas/SimulaDAO.java",
+		"/media/modesto/SOCORRO/PROGRAMAÇÃO 2/AULA DIA29/evendas/Main.java",
+		"/media/modesto/SOCORRO/PROGRAMAÇÃO 2/AULA DIA29/evendas/Pessoa.java",
+		"/media/modesto/SOCORRO/PROGRAMAÇÃO 2/AULA DIA29/evendas/Cliente.java",
+		"/media/modesto/curso/e_vendas/VendaController.java",
+		"/media/modesto/curso/e_vendas/FuncionarioController.java",
+		"/media/modesto/curso/e_vendas/Cliente.java",
+		"/media/modesto/BRUNO/Atividades final de semana/evendas/Funcionario.java",
+		"/media/modesto/BRUNO/Atividades final de semana/evendas/Pessoa.java",
+		"/media/modesto/BRUNO/Atividades final de semana/evendas/Main.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/Venda.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/FuncionarioController.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/VendaController.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/Main.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/Funcionario.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/SimulaDAO.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/Veiculo.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/Cliente.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/[shell_cmd",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/evendas/Pessoa.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex idade/Main2.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex idade/Main.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex idade/Pessoa.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex idade/Main3.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex01/Supervisor.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex01/Funcionario.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex01/Pessoa.java",
+		"/home/modesto/Documentos/Cepa/ProgramaçãoII/Lista/Ex01/Main.java",
+		"/opt/lampp/apache2/htdocs/HelloWord/index.php",
+		"/home/modesto/Documentos/Curso PHP/index.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"autoload",
+			"nome",
+			"ClassName",
+			"string",
+			"\t\t\n",
+			"<!",
+			">\n",
+			"Float",
+			"\t\t\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "Sql.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

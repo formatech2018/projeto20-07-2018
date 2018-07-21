@@ -1,0 +1,28 @@
+{include="cadastro_turma"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+			
+
+			var nome_turno = "{$nome_turno}";
+			var idturma = "{$idturma}";	
+			var idturno = "{$idturno}";
+			var idcurso = "{$idcurso}";
+			var nome_curso = "{$nome_curso}";
+			var data_inicio = "{$data_inicio}";
+			var data_termino = "{$data_termino}";
+			
+			$("#idturno").val(idturno);		
+			$("#nome_turno").val(nome_turno);
+			$("#data_inicio").val(data_inicio);
+			$("#data_termino").val(data_termino);
+			$("#idcurso").val(idcurso);
+			$("#nome_curso").val(nome_curso);
+			
+			$("#formturma").append('<input type="hidden" name="idturma" id="idturma">');
+			$("#idturma").val(idturma);
+		
+	});
+
+</script>

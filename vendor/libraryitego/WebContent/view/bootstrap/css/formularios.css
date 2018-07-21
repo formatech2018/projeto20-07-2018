@@ -1,0 +1,50 @@
+.titulo-formulario{
+	font-size: 30px;
+	font-family: times new roman;
+	
+}
+.titulo-secundario{
+	font-size: 25px;
+	font-family: times new roman;
+}
+label{
+	font-family: times new roman;
+	
+}
+.titulo-select-nivel, .titulo-select-livro{
+	font-size: 15px;
+	font-family: times new roman;
+	margin-top: 5px;
+	padding-bottom: 2px;
+}
+.input-matricula{
+	margin-bottom: 10px;
+}
+.botao{
+	margin-top: 5px;
+}
+.botao:hover{
+	background-image: linear-gradient(to right, #4169E1, #6495ED);
+}
+.botao-nivel{
+	margin-bottom: 10px;
+}
+.select-tipo{
+	width: 10%;
+	margin-left: 1%;
+}
+.rescursohasaluno{
+	width: 48%;
+	float: left;
+	display: inline-block;
+	margin-top: 10px;
+}
+.input-espaco{
+	padding-bottom: 100px;
+}
+#color-date{
+	color: green;
+}
+#remove-box{
+  border-style: none;
+}

@@ -1,0 +1,20 @@
+{include="cadastro_livro_has_autor"}
+<script type="text/javascript">
+	
+	
+	$( document ).ready(function() {
+		
+			var idlivro = "{$idlivro}";
+			var idautor = "{$idautor}";
+			var idlivro_has_autor = "{$idlivro_has_autor}";
+		
+			$("#idlivro").val(idlivro);
+			$("#idautor").val(idautor);
+			
+			
+			$("#formlivrohasautor").append('<input type="hidden" name="idlivro_has_autor" id="idlivro_has_autor">');
+			$("#idlivro_has_autor").val(idlivro_has_autor);
+		
+	});
+
+</script>

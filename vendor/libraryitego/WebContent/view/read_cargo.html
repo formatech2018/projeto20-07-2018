@@ -1,0 +1,25 @@
+<div class="container">
+	
+	<h1 class="titulo-formulario">Listar Cargos</h1>
+
+	<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NOME</th>
+        <th>AÇÃO</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultcargo"}
+      <tr>
+      
+        <td scope="row">{$value.nome_cargo}</td> 
+         <td><a href="/crud/funcionario/cargo/{$value.idcargo}/update" class="btn btn-warning botao">Editar</a>
+          <a href="/crud/funcionario/cargo/{$value.idcargo}/delete" class="btn btn-danger botao">Excluir</a></td>
+ 
+      </tr>
+     {/loop}
+    </tbody>
+  </table>
+</div>

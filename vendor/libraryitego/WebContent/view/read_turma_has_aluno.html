@@ -1,0 +1,32 @@
+<div class="container">
+  <h1 class="titulo-formulario">Listar Matrículas</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">MATRÍCULA</th>
+        <th>CÓDIGO</th>
+        <th>ALUNO</th>
+        <th>TURMA</th>
+        <th>TURMAS POR ALUNO</th>
+        <th>AÇÃO</th>
+       
+        
+      </tr>
+    </thead>
+    <tbody>
+        {loop="$resultturmahasaluno"}
+        <tr>
+            <td scope="row">{$value.matricula}</td>
+            <td>{$value.idturma}</td>
+            <td>{$value.nome_usuario}</td>
+             <td><a href="/crud/turma/{$value.idturma}/matriculas/0/10/read" class="btn btn-success botao tamanhob">Alunos</a>
+            <td><a href="/crud/aluno/{$value.idaluno}/matriculas/0/10/read" class="btn btn-success botao tamanhob">Turmas do Aluno(a)<br> {$value.nome_usuario}</a>
+             <td><a href="/crud/turma/aluno/{$value.matricula}/matricula/update" class="btn btn-warning botao tamanhob-matricula">Editar Matricula</a>
+             <a href="/crud/turma/aluno/{$value.matricula}/matricula/delete" class="btn btn-danger botao tamanhob-matricula">Excluir Matricula</a></td>
+        </tr>
+        {/loop}
+    </tbody>
+  </table>
+</div>
+ 
